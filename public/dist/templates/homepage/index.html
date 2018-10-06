@@ -4,10 +4,13 @@
 <head>
   <title>GoSmartCloud, LLC</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet">
   <script type="text/javascript" src="./src/index.js"></script>
   <link rel="stylesheet" href="./dist/style.css">
 
@@ -16,8 +19,9 @@
 <body>
   <div class="navbar-container">
     <div class="navbar-brand">
-      <img src='../dist/img/gsc-logo.png' class="gsc-logo" />
-
+      <a href="/">
+        <img src='../dist/img/gsc-logo.png' alt="Go Smart Cloud Logo" class="gsc-logo" />
+      </a>
     </div>
     <div class="navbar">
       <div class="navbar-link">
@@ -34,6 +38,33 @@
       </div>
     </div>
   </div>
+
+  <!-- /* Color background and text overlay on hover */ -->
+  <div class="homepage-container overlay-image">
+    <a href="/">
+      <img src="../dist/img/home-background.jpg" alt="cloud computing image" class="homepage-image" />
+      <div class="normal">
+        <div class="homepage-image-text"> Imagination. Inspiration. Possibilities.
+        </div>
+      </div>
+      <div class="hover">
+        <div class="homepage-image-text"> We provide the Best Cloud Consulting
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <section class="services-container">
+    <h1>
+      <strong>OUR SERVICES</strong>
+    </h1>
+    <p>GoSmartCloud is a cloud consulting and web development company. We have extensive experience in cloud computing and responsive
+      web designs. Our process helps to uncover the characteristics of your users by learning about their needs, wants, and
+      limitations.
+    </p>
+  </section>
+
+
 </body>
 
 </html>

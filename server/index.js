@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const root = path.normalize(__dirname + '/..');
 
-// middlewares:
+// express middleware
 app.use(express.static(root + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
