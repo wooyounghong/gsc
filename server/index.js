@@ -4,14 +4,26 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const root = path.normalize(__dirname + '/..');
 
 // middlewares:
-app.use(express.static(`${__dirname}/../client/dist`));
+app.use(express.static(root + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(`${__dirname}/../client/dist/index.html`));
+app.get('/api', (req, res) => {
+  console.log('/GET api route');
+  // res.sendFile(path.resolve(`${__dirname}/..`))
+  res.send('here is api route');
+});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(`${__dirname}/../public/dist/index.html`));
+// });
+
+// /GET/ to Homepage;
+app.get('/', (req, res) => {
+  console.log('req received at homepage');
+  res.sendFile(path.join(root, '/public/dist/templates/homepage/index.html'));
 });
 
 app.listen(PORT, () => {

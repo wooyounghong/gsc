@@ -1,0 +1,28 @@
+/* navbar */
+a {
+  text-decoration: none !important;
+  color: black;
+  font-family: 'Allerta', Helvetica, Arial, sans-serif;
+}
+a:hover {
+  color: red;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.navbar {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  flex-direction: row-reverse;
+  margin: auto 20px;
+}
+.navbar-link {
+  margin: auto 10px;
+}
+img.gsc-logo {
+  margin: auto 80px;
+  width: 300px;
+  height: 50px;
+}
