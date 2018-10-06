@@ -16,10 +16,10 @@ a:hover {
   /* display: flex; */
   /* justify-content: space-between; */
   flex-direction: row-reverse;
-  margin: auto 20px;
+  margin: auto 40px;
 }
 .navbar-link {
-  margin: auto 10px;
+  margin: auto 15px;
 }
 img.gsc-logo {
   margin: auto 80px;
