@@ -1,5 +1,4 @@
-console.log('hi');
-
+console.log('js file is successfully linked');
 // routing to the div element;
 // without jQuery;
 // scroll function that takes in string type of containerId and run this function inside the HTML element
