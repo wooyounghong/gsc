@@ -14,15 +14,19 @@ a:hover {
 
 h1 {
   font-family: 'Corben', Georgia, Times, serif;
-  font-size: 75px;
+  font-size: 60px;
   margin-top: 3em;
   margin-bottom: 1em;
 }
 
-p {
+h5.cloud-adoptions-title {
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+}
+p.content-info {
   font-family: 'Nobile', Helvetica, Arial, sans-serif;
   font-size: 20px;
   text-align: center;
+  margin: 100px;
 }
 
 .navbar-container {
@@ -47,6 +51,11 @@ p {
   width: 100%;
 } */
 
+p.services-items-paragraph {
+  font-size: 12px;
+  font-family: 'Nobile', Helvetica, Arial, sans-serif;
+  margin: auto 80px;
+}
 img.gsc-logo {
   margin: auto 80px;
   width: 300px;
@@ -118,8 +127,31 @@ img.homepage-image {
 .overlay-image .hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-.services-container {
-  /* margin-top: 7em; */
+.center {
   text-align: center;
 }
+
+.services-types-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+.services-items {
+  flex: 1 1 1;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+img.services-items-images {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/* 
+.service-items-description {
+  width: 20%;
+  height: 20%;
+} */
