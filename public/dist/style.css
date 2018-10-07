@@ -88,7 +88,6 @@ img.homepage-image {
 /* Original text overlay */
 .overlay-image .homepage-image-text {
   color: #fff;
-  font-size: 30px;
   line-height: 1.5em;
   text-shadow: 2px 2px 2px #000;
   text-align: center;
@@ -97,6 +96,8 @@ img.homepage-image {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  font-family: 'Corben', Georgia, Times, serif;
+  font-size: 60px;
 }
 
 /********* Overlay on hover *******/
