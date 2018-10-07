@@ -11,11 +11,11 @@ app.use(express.static(root + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/api', (req, res) => {
-  console.log('/GET api route');
-  // res.sendFile(path.resolve(`${__dirname}/..`))
-  res.send('here is api route');
-});
+// app.get('/api', (req, res) => {
+// console.log('/GET api route');
+// res.sendFile(path.resolve(`${__dirname}/..`))
+//   res.send('here is api route');
+// });
 // app.get('*', (req, res) => {
 //   res.sendFile(path.resolve(`${__dirname}/../public/dist/index.html`));
 // });
