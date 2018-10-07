@@ -13,7 +13,7 @@ console.log('hi');
 
 // with jquery;
 // window.scrollTo(0, 0);
-
+// set up jQuery so that when HTML loads, these event handlers will trigger asynchronously;
 $(document).ready(function() {
   // scrolling to top;
   $('html, body').animate({ scrollTop: 0 }, 700);
@@ -26,6 +26,7 @@ $(document).ready(function() {
   $('#about-navbar').click(function() {
     $(window).scrollTop($('#about-container').offset().top);
   });
+  // scrolling to contact container;
   $('#contact-navbar').click(function() {
     $(window).scrollTop($('#contact-container').offset().top);
   });
