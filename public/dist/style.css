@@ -97,7 +97,7 @@ img.homepage-image {
   transform: translate(-50%, -50%);
   width: 100%;
   font-family: 'Corben', Georgia, Times, serif;
-  font-size: 60px;
+  font-size: 35px;
 }
 
 /********* Overlay on hover *******/
@@ -156,3 +156,5 @@ img.services-items-images {
   width: 20%;
   height: 20%;
 } */
+
+/* social media contact */
