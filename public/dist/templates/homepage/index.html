@@ -39,7 +39,7 @@
   </div>
 
   <!-- /* Color background and text overlay on hover */ -->
-  <div class="homepage-container overlay-image">
+  <div class="root-container overlay-image">
     <a href="/">
       <img src="../dist/img/home-background.jpg" alt="cloud computing image" class="homepage-image" />
       <div class="normal">
@@ -95,7 +95,7 @@
 
 
   <section class="center" id="about-container">
-    <div class="homepage-container overlay-image">
+    <div class="root-container overlay-image">
       <a href="/">
         <img src="../dist/img/about-us.jpg" alt="about us overlay image" class="homepage-image" />
         <div class="normal">
@@ -148,25 +148,32 @@
     // with jquery;
     // set up jQuery so that when HTML loads, these event handlers will trigger asynchronously;
     $(document).ready(function () {
+
+      // creating a sticky navbar;
+      const stickyNavTop = $('.navbar-container').offset().top;
+
       // scrolling to top;
       $('html, body').animate({
         scrollTop: 0
       }, 700);
 
       // scroll to services container;
-      $('#services-navbar').click(function () {
+      $('#services-navbar').click(function (e) {
+        e.preventDefault();
         $(window).scrollTop($('#services-container').offset().top);
       });
 
       // scroll to about container;
-      $('#about-navbar').click(function () {
+      $('#about-navbar').click(function (e) {
+        e.preventDefault();
         $(window).scrollTop($('#about-container').offset().top);
       });
       // scrolling to contact container;
-      $('#contact-navbar').click(function () {
+      $('#contact-navbar').click(function (e) {
+        e.preventDefault();
         $(window).scrollTop($('#contact-container').offset().top);
       });
-      // scroll to contact container;
+
     });
   </script>
   <!-- JS SCRIPT  -->

@@ -10,6 +10,8 @@ a {
 }
 a:hover {
   color: red;
+  text-decoration: underline !important;
+  font-size: 20px;
 }
 
 h1 {
@@ -45,11 +47,14 @@ p.content-info {
   font-size: 18px;
 }
 
-/* .sticky {
+.sticky {
   position: fixed;
-  top: 0;
   width: 100%;
-} */
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
 
 p.services-items-paragraph {
   font-size: 12px;
@@ -61,8 +66,9 @@ img.gsc-logo {
   width: 300px;
   height: 50px;
 }
+
 /* home page container */
-.homepage-container {
+.root-container {
   margin-top: 2.5em;
 }
 img.homepage-image {
@@ -89,7 +95,7 @@ img.homepage-image {
 .overlay-image .homepage-image-text {
   color: #fff;
   line-height: 1.5em;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 4px 4px 4px #000;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -109,7 +115,7 @@ img.homepage-image {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 1s ease;
+  transition: 1.5s ease;
 }
 
 /* New overlay appearance on hover */
