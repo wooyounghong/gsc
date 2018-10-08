@@ -120,43 +120,44 @@
     </h1>
     <div class="contact-info-container">
       <div class="contact-info-items">
-        <a>Company Logo here!</a>
+        <a class="contact-company-anchor" style="color: grey; text-decoration: none !important; font-size: inherit;">GoSmartCloud, LLC</a>
       </div>
-      <div class="contact-info-items">
+      <div class=" contact-info-items ">
         <a>Facebook</a>
       </div>
-      <div class="contact-info-items">
+      <div class="contact-info-items ">
         <a>LinkedIn</a>
       </div>
-      <div class="contact-info-items">
+      <div class="contact-info-items ">
         <a>E-mail</a>
       </div>
     </div>
   </section>
-  <script type="text/javascript">
+  <script type="text/javascript ">
     // with jquery;
     // set up jQuery so that when HTML loads, these event handlers will trigger asynchronously;
     $(document).ready(function () {
       // creating a sticky navbar;
       const stickyNavTop = $('.navbar-container').offset().top;
 
-      // scrolling to top;
+      // scrolling to top:
       $('html, body').animate({
         scrollTop: 0
       }, 700);
 
-      // scroll to services container;
+      // scroll to services container:
       $('#services-navbar').click(function (e) {
         e.preventDefault();
         $(window).scrollTop($('#services-container').offset().top);
       });
 
-      // scroll to about container;
+      // scroll to about container:
       $('#about-navbar').click(function (e) {
         e.preventDefault();
         $(window).scrollTop($('#about-container').offset().top);
       });
-      // scrolling to contact container;
+
+      // scrolling to contact container:
       $('#contact-navbar').click(function (e) {
         e.preventDefault();
         $(window).scrollTop($('#contact-container').offset().top);
@@ -165,7 +166,7 @@
     });
   </script>
   <!-- JS SCRIPT  -->
-  <!-- <script type="text/javascript" src="../../../src/index.js"></script> -->
+  <!-- <script type="text/javascript " src="../../../src/index.js "></script> -->
 </body>
 
 </html>
