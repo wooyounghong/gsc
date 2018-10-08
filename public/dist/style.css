@@ -163,4 +163,13 @@ img.services-items-images {
   height: 20%;
 } */
 
-/* social media contact */
+/* contact info! */
+.contact-info-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3em;
+}
+
+.contact-info-items {
+  margin: auto 15px;
+}
