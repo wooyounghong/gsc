@@ -166,10 +166,11 @@ img.services-items-images {
 /* contact info! */
 .contact-info-container {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 3em;
+  justify-content: center;
+  margin-bottom: 15em;
 }
 
 .contact-info-items {
-  margin: auto 15px;
+  margin: auto 10px;
+  font-size: unset !important;
 }
